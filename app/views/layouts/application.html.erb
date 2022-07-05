@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Guesto</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-  </head>
+<head>
+  <title>Guesto</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-  <body>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+</head>
+
+<body>
+  <main role="main" class="container">
     <%= yield %>
-  </body>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">
+        Guesto by cerf on rails
+      </span>
+    </div>
+  </footer>
+</body>
+
 </html>
